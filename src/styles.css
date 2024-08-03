@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%; /* ให้ `html` และ `body` ครอบคลุมความสูงทั้งหมดของหน้าจอ */
+    margin: 0; /* ลบระยะห่างเริ่มต้นจาก `body` */
+    padding: 0; /* ลบการเติมพื้นที่จาก `body` */
+  }
+  
+  body {
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20220523/pngtree-pastel-sky-in-blue-image_1397119.jpg');
+    background-size: cover; /* ขยายรูปภาพให้ครอบคลุมพื้นที่ทั้งหมด */
+    background-position: center; /* จัดตำแหน่งรูปภาพให้อยู่กึ่งกลาง */
+    background-repeat: no-repeat; /* ป้องกันการซ้ำของรูปภาพ */
+  }
+  
+  

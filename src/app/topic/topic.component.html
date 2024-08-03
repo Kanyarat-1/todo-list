@@ -1,0 +1,17 @@
+<div class="mt-5 container">
+
+    <div class="alert alert-info">To Do list</div>
+    <div class="input-group my-2">
+        <input class="form-control" id="topic" [formControl]="topic">
+        <button class="btn btn-primary" (click)="onAddTopic()">
+            <i class="bi bi-plus-circle"></i>
+        </button>
+    </div>
+        @for (topic of topics; track $index){
+            <div class="alert alert-secondary">
+                <i class="bi bi-x-circle-fill" (click)="onRemoveTopic(topic.id)"></i>
+                <span (click)="onSelectTopic(topic.id)">{{topic.topic}}</span>
+            </div>
+        }
+    
+</div>
